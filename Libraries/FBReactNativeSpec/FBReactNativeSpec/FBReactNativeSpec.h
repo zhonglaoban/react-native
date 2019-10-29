@@ -633,9 +633,9 @@ namespace JS {
 - (void)addWebSocketHandler:(double)id;
 - (void)removeWebSocketHandler:(double)id;
 - (void)sendOverSocket:(NSDictionary *)blob
-              socketID:(double)socketID;
+                    id:(double)id;
 - (void)createFromParts:(NSArray *)parts
-                 withId:(NSString *)withId;
+                 blobId:(NSString *)blobId;
 - (void)release:(NSString *)blobId;
 - (facebook::react::ModuleConstants<JS::NativeBlobModule::Constants::Builder>)constantsToExport;
 - (facebook::react::ModuleConstants<JS::NativeBlobModule::Constants::Builder>)getConstants;
